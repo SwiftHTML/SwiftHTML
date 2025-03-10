@@ -5,6 +5,7 @@
 //  Created by Piotrek Jeremicz on 10.03.2025.
 //
 
+///
 /// A node that doesn't contain any content.
 ///
 /// SwiftHTML uses `EmptyNode` in situations where a SwiftHTML node type defines one

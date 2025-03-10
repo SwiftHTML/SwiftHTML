@@ -1,10 +1,11 @@
 //
 //  Node.swift
-//  swift-html
+//  SwiftHTML
 //
 //  Created by Piotrek Jeremicz on 09.03.2025.
 //
 
+///
 /// A type that represents an HTML node, which is the base entity of the HyperText Markup Language.
 ///
 /// Node can contain children that are represented by the `associatedtype Body`. `Body` inherits
