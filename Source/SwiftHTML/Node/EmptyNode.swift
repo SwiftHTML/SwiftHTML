@@ -24,12 +24,13 @@ public struct EmptyNode: Node {
     public typealias Body = Never
 }
 
+public extension EmptyNode {
+    /// A textual representation of this node
+    var description: String { "" }
+}
+
 extension EmptyNode {
     @_spi(Private) public var body: Never {
         fatalError("EmptyNode does not support the `body` property.")
-    }
-    
-    @_spi(Private) public var description: String {
-        fatalError("EmptyNode does not support the `description` property.")
     }
 }
