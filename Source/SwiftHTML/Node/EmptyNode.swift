@@ -18,9 +18,6 @@ public struct EmptyNode: Node {
     public init() {}
     
     /// The type of node representing the body of this node.
-    ///
-    /// When you create a custom node, Swift infers this type from your
-    /// implementation of the required `var body: some Node` property.
     public typealias Body = Never
 }
 
