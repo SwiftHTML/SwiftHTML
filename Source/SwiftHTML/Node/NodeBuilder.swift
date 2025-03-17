@@ -11,7 +11,8 @@
 /// `NodeBuilder` enables the use of Swift's result builder syntax to construct node hierarchies.
 /// It supports multiple overloads to handle empty nodes, single nodes, and tuple nodes.
 ///
-@resultBuilder public struct NodeBuilder {
+@resultBuilder
+public struct NodeBuilder {
     /// Builds an empty node when no content is provided.
     /// - Returns: An instance of `EmptyNode`.
     public static func buildBlock() -> EmptyNode {

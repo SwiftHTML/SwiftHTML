@@ -41,7 +41,8 @@ private extension TupleNode {
 }
 
 extension TupleNode {
-    @_spi(Private) public var body: Never {
+    @_spi(Private)
+    public var body: Never {
         fatalError("TupleNode does not support the `body` property.")
     }
 }

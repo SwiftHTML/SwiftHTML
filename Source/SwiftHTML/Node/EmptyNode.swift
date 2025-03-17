@@ -27,7 +27,8 @@ public extension EmptyNode {
 }
 
 extension EmptyNode {
-    @_spi(Private) public var body: Never {
+    @_spi(Private)
+    public var body: Never {
         fatalError("EmptyNode does not support the `body` property.")
     }
 }
