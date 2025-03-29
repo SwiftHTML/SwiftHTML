@@ -16,7 +16,7 @@ public struct NodeBuilder {
     /// Builds an empty node when no content is provided.
     /// - Returns: An instance of `EmptyNode`.
     public static func buildBlock() -> EmptyNode {
-        .init()
+        EmptyNode()
     }
     
     /// Builds a single node when one `Node` instance is provided.
@@ -37,6 +37,6 @@ public struct NodeBuilder {
     /// - Parameter content: A variadic list of `Node` instances.
     /// - Returns: A `TupleNode` containing all the provided `Node` instances.
     public static func buildBlock<each Content>(_ content: repeat each Content) -> TupleNode<(repeat each Content)> where repeat each Content: Node {
-        .init((repeat each content))
+        TupleNode((repeat each content))
     }
 }

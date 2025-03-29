@@ -19,9 +19,6 @@ public struct TupleNode<T>: Node {
     }
     
     /// The type of node representing the body of this node.
-    ///
-    /// When you create a custom node, Swift infers this type from your
-    /// implementation of the required `var body: some Node` property.
     public typealias Body = Never
 }
 
@@ -41,6 +38,8 @@ private extension TupleNode {
 }
 
 extension TupleNode {
+    /// Prevents access to the `body` property for elements that do not support it.
+    /// Triggers a runtime error if accessed.
     @_spi(Private)
     public var body: Never {
         fatalError("TupleNode does not support the `body` property.")

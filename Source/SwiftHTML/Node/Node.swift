@@ -22,5 +22,5 @@ public protocol Node: CustomStringConvertible {
     ///
     /// When you implement a custom node, you must implement a computed
     /// `body` property to provide the content for your node.
-    var body: Self.Body { get }
+    @NodeBuilder var body: Self.Body { get }
 }

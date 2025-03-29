@@ -27,6 +27,8 @@ public extension EmptyNode {
 }
 
 extension EmptyNode {
+    /// Prevents access to the `body` property for elements that do not support it.
+    /// Triggers a runtime error if accessed.
     @_spi(Private)
     public var body: Never {
         fatalError("EmptyNode does not support the `body` property.")
