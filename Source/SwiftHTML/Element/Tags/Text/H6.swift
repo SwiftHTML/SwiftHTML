@@ -5,14 +5,14 @@
 //  Created by Piotrek Jeremicz on 29.03.2025.
 //
 
-struct H6<Content>: Element where Content: Node {
+public struct H6<Content>: Element where Content: Node {
     let content: Content
     
-    init(@NodeBuilder content: () -> Content) {
+    public init(@NodeBuilder content: () -> Content) {
         self.content = content()
     }
     
-    var body: some Node {
+    public var body: some Node {
         content
     }
 }

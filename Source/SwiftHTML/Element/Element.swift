@@ -8,7 +8,6 @@
 /// A protocol representing an HTML-like element with a tag name.
 /// Conforms to `Node` and provides default implementations for rendering.
 public protocol Element: Node {
-    
     /// The HTML tag name of the element.
     var tag: String { get }
 }

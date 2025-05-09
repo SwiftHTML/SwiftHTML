@@ -5,6 +5,6 @@
 //  Created by Piotrek Jeremicz on 29.03.2025.
 //
 
-struct Br: Element {
-    typealias Body = Never
+public struct Br: Element {
+    public typealias Body = Never
 }

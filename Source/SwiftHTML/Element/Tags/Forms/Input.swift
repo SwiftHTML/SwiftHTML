@@ -6,6 +6,6 @@
 //
 
 
-struct Input: Element {
-    typealias Body = Never
+public struct Input: Element {
+    public typealias Body = Never
 }
