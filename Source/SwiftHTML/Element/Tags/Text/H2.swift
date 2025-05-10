@@ -11,6 +11,10 @@ public struct H2<Content>: Element where Content: Node {
     public init(@NodeBuilder content: () -> Content) {
         self.content = content()
     }
+
+    public init(_ text: String) where Content == String {
+        self.content = text
+    }
     
     public var body: some Node {
         content
