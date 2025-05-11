@@ -23,7 +23,6 @@
 ///   Prefer CSS for layout or spacing when possible.
 /// - Important: This element is self-closing and its body is defined as `Never`.
 public struct Br: Element {
-
     /// The `<br>` tag has no body content.
     public typealias Body = Never
 }
