@@ -11,7 +11,14 @@ let package = Package(
             targets: ["SwiftHTML"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+    ],
     targets: [
-        .target(name: "SwiftHTML"),
+        .target(
+            name: "SwiftHTML",
+            dependencies: ["DeveloperTools"]
+        ),
+        .target(name: "DeveloperTools")
     ]
 )
