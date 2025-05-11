@@ -14,7 +14,7 @@ public protocol Element: Node {
 
 public extension Element {
     var tag: String {
-        "\(type(of: self))".lowercased()
+        "\(type(of: self))".split(separator: "<").first?.lowercased() ?? "\(type(of: self))".lowercased()
     }
     
     var description: String {

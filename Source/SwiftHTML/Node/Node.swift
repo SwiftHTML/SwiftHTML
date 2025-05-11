@@ -24,3 +24,7 @@ public protocol Node: CustomStringConvertible {
     /// `body` property to provide the content for your node.
     @NodeBuilder var body: Self.Body { get }
 }
+
+extension Node {
+    public var description: String { body.description }
+}
